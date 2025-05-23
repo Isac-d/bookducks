@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="productPage.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="productPage.js" defer type="module"></script>
+    <script src="../../utlils/renderIfSignedIn.js" defer type="module"></script>
+    <script src="../../utlils/handleTheme.js" defer type="module"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Book<span class="logo-yellow">Ducks</span></div>
+      <div class="navlink-container">
+        <a href="../../index.html" class="navlink">Home</a>
+        <a href="../../index.html#books" class="navlink">Books</a>
+        <a href="../login/login.html" class="navlink log-in">Log In</a>
+        <a href="../mypages/mypages.html" class="navlink my-pages">My Pages</a>
+        <a href="" class="navlink log-Out">Log Out</a>
+        
+      </div>
+    </nav>
+    <div class="site-overlay"></div>
+    <div class="product-page-wrapper">
+      <div class="single-book-container">
+        <div class="book-info">
+          <img src="" alt="" class="single-book-img" />
+          <div class="book-text">
+            <div class="book-title-author">
+              <h1>BookTitle</h1>
+              <h2>Written by author</h2>
+            </div>
+            <div class="book-desc">
+              <div class="about">
+                <h3>About The Book</h3>
+                <p class="pages">-300 Pages</p>
+                <p class="release-date">30/30/30</p>
+              </div>
+              <div class="description-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+                tempore rerum enim cumque laudantium
+              </div>
+            </div>
+            <div class="rating-button-container">
+              <div class="rating-container">
+                <h3>Your Rating:</h3>
+                <div class="product-star-container"></div>
+              </div>
+              <div class="product-button-container">
+                <div class="review-readlist">
+                    <button class="review-btn">REVIEW BOOK</button>
+                    <div class="addtoreadlist">
+                      <i class="fa-solid fa-book fa-xl"></i>
+                      <p>Add to readlist</p>
+                    </div>
+                </div>
+                <div class="log-in-to-review">
+                    <a href="../login/login.html">
+                        <button class="log-in-button">LOG IN</button>
+                    </a>
+                    <h3>TO REVIEW</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rating-number-container">
+          <div class="rating-number">
+            <span class="logo-yellow rating">5</span>/5
+          </div>
+          <p class="vote-count">- 5 Votes</p>
+        </div>
+      </div>
+      <div class="reviews-wrapper">
+        <h1>Reviews</h1>
+        <div class="review-list">
+          <div class="review-placeholer">THIS BOOK HAS NO REVIEWS</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-popup">
+      <div class="upper-popup">
+        <h2>I've Just Read...</h2>
+        <i style="cursor: pointer;" class="fa-solid fa-xmark fa-xl"></i>
+      </div>
+      <div class="popup-body">
+        <div class="review-container">
+          <img src="" alt="" class="review-book-img">
+          <div class="review-title-text">
+            <h1 class="review-book-title">BookTitle</h1>
+            <div class="rating-star-container">
+              <h3>RATE:</h3>
+              <div class="star-rating" id="starRating">
+                <div class="star-container-reviews">
+                  <div class="star-empty-review">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                  
+                  <div class="star-filled-review" id="starFilled">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="write-review">
+              <h3>Add review</h3>
+              <textarea class="review-textarea" placeholder="Write review..." name="" id=""></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="submit-review">SAVE REVIEW</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

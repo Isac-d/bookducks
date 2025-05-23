@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "Theme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Theme": {
+      "type": "enumeration",
+      "enum": [
+        "Default",
+        "Christmas",
+        "Easter"
+      ]
+    }
+  }
+}
